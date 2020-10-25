@@ -1,0 +1,24 @@
+server:
+  port: 8089
+
+spring:  datasource:    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/premission?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  thymeleaf:
+    #模板的模式，支持 HTML, XML TEXT JAVASCRIPT
+      mode: HTML5
+    #编码 可不用配置
+      encoding: UTF-8
+    #内容类别,可不用配置
+#      content-type: text/html
+    #开发配置为false,避免修改模板还要重启服务器
+      cache: false
+    #配置模板路径，默认是templates，可以不用配置
+      prefix: classpath:/templates/
+      
+
+##定位模板属性#  mvc:#    view:#      prefix: /
+##给返回的页面添加后缀名#      suffix: .html
+   
